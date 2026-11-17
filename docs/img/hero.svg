@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="380" viewBox="0 0 800 380" role="img" aria-label="envdiff terminal output">
+  <rect width="800" height="380" rx="12" fill="#0d1117"/>
+  <rect width="800" height="34" rx="12" fill="#161b22"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f56"/><circle cx="42" cy="17" r="6" fill="#ffbd2e"/><circle cx="62" cy="17" r="6" fill="#27c93f"/>
+  <g font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14" fill="#c9d1d9">
+    <text x="24" y="64" fill="#8b949e">$ envdiff --scan --check</text>
+    <text x="24" y="92" font-weight="bold">Comparing: .env&#160;&#160;&lt;-&gt;&#160;&#160;.env.example</text>
+    <text x="24" y="120">Missing from .env.example:</text>
+    <text x="24" y="140" fill="#3fb950">&#160;&#160;+ REDIS_URL</text>
+    <text x="24" y="160" fill="#3fb950">&#160;&#160;+ STRIPE_WEBHOOK_SECRET</text>
+    <text x="24" y="188">Extra (not in .env):</text>
+    <text x="24" y="208" fill="#f85149">&#160;&#160;- LEGACY_API_URL</text>
+    <text x="24" y="236" fill="#d29922">Warning: .env.example may contain real secrets</text>
+    <text x="24" y="256"><tspan fill="#d29922">&#160;&#160;! line 7&#160;&#160;&#160;OPENAI_API_KEY&#160;&#160;</tspan>sk-****&#160;&#160;matches a known OpenAI-style API key pattern</text>
+    <text x="24" y="276" fill="#8b949e">&#160;&#160;Values are masked. Rotate any real key that was committed.</text>
+    <text x="24" y="304" font-weight="bold">Result: 2 missing keys, 1 extra key, 1 possible secret</text>
+    <text x="24" y="332" fill="#8b949e">$ echo $?</text>
+    <text x="24" y="352">1</text>
+  </g>
+</svg>
